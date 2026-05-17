@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Recipes {
+  id              Int                 @id @default(autoincrement())
+  name            String
+  description     String
+  cooking_time    Int
+  category_id     Int
+  difficulty_id   Int
+  image_url       String?
+  
+  category        Categories          @relation(fields: [category_id], references: [id])
+  difficulty      DifficultyLevels    @relation(fields: [difficulty_id], references: [id])
+  ingredients     RecipeIngredients[]
+  steps           CookingSteps[]
+  ai_enhancements AIEnhancements[]
+}
+
+model Ingredients {
+  id              Int                 @id @default(autoincrement())
+  name            String
+  recipes         RecipeIngredients[]
+}
+
+model RecipeIngredients {
+  recipe_id       Int
+  ingredient_id   Int
+  quantity        String
+
+  recipe          Recipes             @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+  ingredient      Ingredients         @relation(fields: [ingredient_id], references: [id], onDelete: Cascade)
+
+  @@id([recipe_id, ingredient_id])
+}
+
+model Categories {
+  id              Int                 @id @default(autoincrement())
+  name            String
+  recipes         Recipes[]
+}
+
+model DifficultyLevels {
+  id              Int                 @id @default(autoincrement())
+  level           String
+  recipes         Recipes[]
+}
+
+model CookingSteps {
+  id              Int                 @id @default(autoincrement())
+  recipe_id       Int
+  step_number     Int
+  instruction     String
+
+  recipe          Recipes             @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+}
+
+model AIEnhancements {
+  id               Int                 @id @default(autoincrement())
+  recipe_id        Int
+  enhancement_text String
+  generated_at     DateTime            @default(now())
+
+  recipe           Recipes             @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+}

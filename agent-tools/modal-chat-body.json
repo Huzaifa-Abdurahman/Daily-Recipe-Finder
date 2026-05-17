@@ -1,0 +1,1 @@
+{"model": "zai-org/GLM-5.1-FP8", "messages": [{"role": "user", "content": "How many r-s are in strawberry?"}], "max_tokens": 500}
