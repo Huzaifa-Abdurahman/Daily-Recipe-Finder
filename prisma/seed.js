@@ -46,6 +46,27 @@ async function main() {
     'https://spoonacular.com/recipeImages/716408-556x370.jpg',
     'https://spoonacular.com/recipeImages/716409-556x370.jpg',
     'https://spoonacular.com/recipeImages/716410-556x370.jpg',
+    'https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=800&h=480&q=80',  // Shrimp Scampi
+    'https://images.unsplash.com/photo-1547592180-85c173f879d2?auto=format&fit=crop&w=800&h=480&q=80',  // Lentil Soup
+    'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=800&h=480&q=80',  // Zucchini Bread
+    'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&h=480&q=80',  // Chicken Marsala
+    'https://images.unsplash.com/photo-1592417817098-8fd3d4c8bd94?auto=format&fit=crop&w=800&h=480&q=80',  // Caprese Salad
+    'https://images.unsplash.com/photo-1547592166-23ac457c016d?auto=format&fit=crop&w=800&h=480&q=80',  // Butternut Squash Soup
+    'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&h=480&q=80',  // Pesto Pasta
+    'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&h=480&q=80',  // Eggplant Rollatini
+    'https://images.unsplash.com/photo-1600967361966-dab40ccf3f7a?auto=format&fit=crop&w=800&h=480&q=80',  // Guacamole
+    'https://images.unsplash.com/photo-1547592180-85c173f879d2?auto=format&fit=crop&w=800&h=480&q=80',  // Clam Chowder
+    'https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&h=480&q=80',  // Pad Thai
+    'https://images.unsplash.com/photo-1615325972504-6dd8c55dfab6?auto=format&fit=crop&w=800&h=480&q=80',  // Stuffed Mushrooms
+    'https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&h=480&q=80',  // Risotto alla Milanese
+    'https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=800&h=480&q=80',  // Pico de Gallo
+    'https://images.unsplash.com/photo-1534082153518-8e5e6efb9ddc?auto=format&fit=crop&w=800&h=480&q=80',  // Cioppino
+    'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&h=480&q=80',  // Bruschetta
+    'https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=800&h=480&q=80',  // Beef Wellington
+    'https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&h=480&q=80',  // Quiche Lorraine
+    'https://images.unsplash.com/photo-1565971648911-117eb7b142a5?auto=format&fit=crop&w=800&h=480&q=80',  // Creme Brulee
+    'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&h=480&q=80',  // Tiramisu
+
   ];
 
   // Array of 20 recipes to seed
@@ -316,6 +337,27 @@ async function main() {
 { name: 'Hash Browns', desc: 'Crispy potato hash browns.', time: 20, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'butter', q: '1 tbsp'}, {name: 'salt', q: '1 tsp'}] },
 
 { name: 'Breakfast Sandwich', desc: 'Egg and cheese breakfast sandwich.', time: 15, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'egg', q: '1'}, {name: 'cheese', q: '1 slice'}, {name: 'butter', q: '1 tbsp'}] },
+ // Add these NEW recipes to your recipesData array (20 unique items)
+{ name: 'Shrimp Scampi', desc: 'Succulent shrimp in a garlic lemon butter sauce over pasta.', time: 20, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'shrimp', q: '1 lb'}, {name: 'pasta', q: '8 oz'}, {name: 'garlic', q: '4 cloves'}, {name: 'butter', q: '4 tbsp'}, {name: 'lemon', q: '1'}] },
+{ name: 'Lentil Soup', desc: 'Hearty and healthy lentil soup.', time: 45, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'lentils', q: '1 cup'}, {name: 'carrot', q: '2'}, {name: 'celery', q: '2 stalks'}, {name: 'onion', q: '1'}, {name: 'vegetable broth', q: '4 cups'}] },
+{ name: 'Zucchini Bread', desc: 'Sweet and moist bread perfect for breakfast or dessert.', time: 55, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'zucchini', q: '2 cups shredded'}, {name: 'flour', q: '2 cups'}, {name: 'sugar', q: '1 cup'}, {name: 'egg', q: '2'}, {name: 'cinnamon', q: '1 tsp'}] },
+{ name: 'Chicken Marsala', desc: 'Chicken breasts in a rich mushroom and Marsala wine sauce.', time: 35, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'chicken', q: '2 breasts'}, {name: 'marsala wine', q: '1 cup'}, {name: 'mushroom', q: '8 oz'}, {name: 'flour', q: '1/2 cup'}, {name: 'butter', q: '3 tbsp'}] },
+{ name: 'Caprese Salad', desc: 'Fresh Italian salad with tomatoes, mozzarella, and basil.', time: 10, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'tomato', q: '2 large'}, {name: 'mozzarella', q: '8 oz'}, {name: 'basil', q: '1/2 cup'}, {name: 'olive oil', q: '2 tbsp'}, {name: 'balsamic glaze', q: '1 tbsp'}] },
+{ name: 'Butternut Squash Soup', desc: 'Creamy and velvety roasted butternut squash soup.', time: 50, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'butternut squash', q: '2 lbs'}, {name: 'onion', q: '1'}, {name: 'carrot', q: '1'}, {name: 'vegetable broth', q: '3 cups'}, {name: 'cream', q: '1/2 cup'}] },
+{ name: 'Pesto Pasta', desc: 'Simple pasta tossed in homemade basil pesto.', time: 15, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'pasta', q: '8 oz'}, {name: 'basil', q: '2 cups'}, {name: 'pine nuts', q: '1/4 cup'}, {name: 'parmesan', q: '1/2 cup'}, {name: 'olive oil', q: '1/2 cup'}] },
+{ name: 'Eggplant Rollatini', desc: 'Rolled eggplant slices filled with ricotta and baked with marinara.', time: 50, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'eggplant', q: '2 large'}, {name: 'ricotta cheese', q: '2 cups'}, {name: 'mozzarella', q: '1 cup'}, {name: 'marinara sauce', q: '2 cups'}, {name: 'egg', q: '1'}] },
+{ name: 'Guacamole', desc: 'Fresh and creamy avocado dip.', time: 10, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'avocado', q: '3'}, {name: 'lime', q: '1'}, {name: 'onion', q: '1/4 cup'}, {name: 'cilantro', q: '2 tbsp'}, {name: 'tomato', q: '1'}] },
+{ name: 'Clam Chowder', desc: 'Creamy New England style clam chowder.', time: 40, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'clams', q: '2 cans minced'}, {name: 'potato', q: '3'}, {name: 'onion', q: '1'}, {name: 'celery', q: '2 stalks'}, {name: 'cream', q: '1 cup'}] },
+{ name: 'Pad Thai', desc: 'Famous Thai stir-fried noodle dish.', time: 30, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'rice noodles', q: '8 oz'}, {name: 'shrimp', q: '1/2 lb'}, {name: 'tofu', q: '1/2 block'}, {name: 'egg', q: '2'}, {name: 'bean sprouts', q: '1 cup'}, {name: 'peanuts', q: '1/4 cup'}] },
+{ name: 'Stuffed Mushrooms', desc: 'Mushroom caps stuffed with garlic, cheese, and breadcrumbs.', time: 25, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'mushroom', q: '16 oz'}, {name: 'cream cheese', q: '4 oz'}, {name: 'parmesan', q: '1/4 cup'}, {name: 'garlic', q: '2 cloves'}, {name: 'breadcrumbs', q: '1/4 cup'}] },
+{ name: 'Risotto alla Milanese', desc: 'Creamy saffron-infused risotto.', time: 35, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'arborio rice', q: '1.5 cups'}, {name: 'saffron', q: '1 pinch'}, {name: 'onion', q: '1/2'}, {name: 'white wine', q: '1/2 cup'}, {name: 'parmesan', q: '1/2 cup'}, {name: 'broth', q: '4 cups'}] },
+{ name: 'Pico de Gallo', desc: 'Fresh Mexican salsa.', time: 10, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'tomato', q: '4'}, {name: 'onion', q: '1/2'}, {name: 'jalapeno', q: '1'}, {name: 'cilantro', q: '1/4 cup'}, {name: 'lime', q: '1'}] },
+{ name: 'Cioppino', desc: 'Italian-American seafood stew.', time: 45, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'shrimp', q: '1/2 lb'}, {name: 'mussels', q: '1/2 lb'}, {name: 'clams', q: '1/2 lb'}, {name: 'fish', q: '1/2 lb'}, {name: 'tomato sauce', q: '2 cups'}, {name: 'white wine', q: '1 cup'}] },
+{ name: 'Bruschetta', desc: 'Toasted bread topped with fresh tomatoes and basil.', time: 15, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'baguette', q: '1'}, {name: 'tomato', q: '4'}, {name: 'basil', q: '1/2 cup'}, {name: 'garlic', q: '2 cloves'}, {name: 'olive oil', q: '1/4 cup'}] },
+{ name: 'Beef Wellington', desc: 'Beef tenderloin wrapped in puff pastry with duxelles.', time: 90, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'beef tenderloin', q: '2 lbs'}, {name: 'puff pastry', q: '1 sheet'}, {name: 'mushroom', q: '1 lb'}, {name: 'prosciutto', q: '6 slices'}, {name: 'mustard', q: '2 tbsp'}, {name: 'egg', q: '1'}] },
+{ name: 'Quiche Lorraine', desc: 'Classic French egg and bacon tart.', time: 45, cat: catBreakfast.id, diff: diffMedium.id, ingredients: [{name: 'pie crust', q: '1'}, {name: 'egg', q: '4'}, {name: 'bacon', q: '6 slices'}, {name: 'cream', q: '1 cup'}, {name: 'gruyere cheese', q: '1 cup'}] },
+{ name: 'Creme Brulee', desc: 'Rich custard with a caramelized sugar topping.', time: 45, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'cream', q: '2 cups'}, {name: 'egg yolk', q: '5'}, {name: 'sugar', q: '1/2 cup'}, {name: 'vanilla', q: '1 tsp'}, {name: 'brown sugar', q: '2 tbsp'}] },
+{ name: 'Tiramisu', desc: 'Classic Italian coffee-flavored dessert.', time: 30, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'mascarpone cheese', q: '8 oz'}, {name: 'ladyfingers', q: '24'}, {name: 'espresso', q: '1 cup'}, {name: 'egg yolk', q: '3'}, {name: 'sugar', q: '1/2 cup'}, {name: 'cocoa powder', q: '2 tbsp'}] },
   ];
 
   for (let i = 0; i < recipesData.length; i++) {
