@@ -70,6 +70,252 @@ async function main() {
     { name: 'Fruit Salad', desc: 'Fresh mixed fruit salad.', time: 10, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'apple', q: '1'}, {name: 'banana', q: '1'}, {name: 'grape', q: '1 cup'}] },
     { name: 'Banana Bread', desc: 'Moist and sweet banana bread.', time: 55, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'banana', q: '3'}, {name: 'flour', q: '1.5 cups'}, {name: 'sugar', q: '1/2 cup'}, {name: 'egg', q: '1'}] },
     { name: 'Mac and Cheese', desc: 'Creamy macaroni and cheese.', time: 25, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'pasta', q: '2 cups'}, {name: 'cheese', q: '1.5 cups'}, {name: 'milk', q: '1 cup'}, {name: 'butter', q: '2 tbsp'}] },
+    { name: 'Chicken Alfredo Pasta', desc: 'Creamy Alfredo pasta with grilled chicken.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'pasta', q: '2 cups'}, {name: 'chicken', q: '1 cup'}, {name: 'cream', q: '1 cup'}, {name: 'parmesan', q: '1/2 cup'}] },
+
+{ name: 'Beef Burger', desc: 'Juicy homemade beef burger.', time: 25, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 patty'}, {name: 'bun', q: '1'}, {name: 'lettuce', q: '2 leaves'}, {name: 'cheese', q: '1 slice'}] },
+
+{ name: 'Veggie Burger', desc: 'Healthy vegetable burger.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'carrot', q: '1'}, {name: 'bun', q: '1'}, {name: 'lettuce', q: '2 leaves'}] },
+
+{ name: 'Chicken Wrap', desc: 'Grilled chicken tortilla wrap.', time: 15, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'chicken', q: '1 cup'}, {name: 'tortilla', q: '1'}, {name: 'lettuce', q: '1/2 cup'}, {name: 'mayo', q: '2 tbsp'}] },
+
+{ name: 'Tuna Salad', desc: 'Light and healthy tuna salad.', time: 10, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'tuna', q: '1 can'}, {name: 'lettuce', q: '2 cups'}, {name: 'tomato', q: '1'}, {name: 'cucumber', q: '1'}] },
+
+{ name: 'Greek Salad', desc: 'Fresh Greek salad with feta.', time: 10, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'cucumber', q: '1'}, {name: 'tomato', q: '2'}, {name: 'feta cheese', q: '1/2 cup'}, {name: 'olive oil', q: '1 tbsp'}] },
+
+{ name: 'Caesar Salad', desc: 'Classic Caesar salad.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'lettuce', q: '1 head'}, {name: 'croutons', q: '1 cup'}, {name: 'parmesan', q: '1/4 cup'}, {name: 'caesar dressing', q: '3 tbsp'}] },
+
+{ name: 'Chicken Curry', desc: 'Traditional chicken curry.', time: 45, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'onion', q: '2'}, {name: 'tomato', q: '2'}, {name: 'spices', q: '2 tbsp'}] },
+
+{ name: 'Beef Curry', desc: 'Rich beef curry.', time: 60, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'onion', q: '2'}, {name: 'garlic', q: '4 cloves'}, {name: 'spices', q: '2 tbsp'}] },
+
+{ name: 'Vegetable Curry', desc: 'Mixed vegetable curry.', time: 35, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'carrot', q: '2'}, {name: 'peas', q: '1 cup'}, {name: 'spices', q: '1 tbsp'}] },
+
+{ name: 'Chicken Biryani', desc: 'Flavorful chicken biryani.', time: 60, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'chicken', q: '1 lb'}, {name: 'yogurt', q: '1/2 cup'}, {name: 'spices', q: '2 tbsp'}] },
+
+{ name: 'Beef Biryani', desc: 'Traditional beef biryani.', time: 75, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'beef', q: '1 lb'}, {name: 'onion', q: '2'}, {name: 'spices', q: '2 tbsp'}] },
+
+{ name: 'Lemon Rice', desc: 'Tangy lemon-flavored rice.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'lemon', q: '1'}, {name: 'mustard seeds', q: '1 tsp'}, {name: 'oil', q: '1 tbsp'}] },
+
+{ name: 'Egg Fried Rice', desc: 'Quick egg fried rice.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'egg', q: '2'}, {name: 'soy sauce', q: '2 tbsp'}, {name: 'carrot', q: '1'}] },
+
+{ name: 'Vegetable Fried Rice', desc: 'Mixed vegetable fried rice.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'carrot', q: '1'}, {name: 'peas', q: '1/2 cup'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Spaghetti Bolognese', desc: 'Classic meat spaghetti.', time: 40, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'spaghetti', q: '8 oz'}, {name: 'beef', q: '1 cup'}, {name: 'tomato sauce', q: '1 cup'}, {name: 'garlic', q: '2 cloves'}] },
+
+{ name: 'Vegetable Lasagna', desc: 'Layered vegetable lasagna.', time: 55, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'lasagna sheets', q: '10'}, {name: 'cheese', q: '2 cups'}, {name: 'tomato sauce', q: '2 cups'}, {name: 'spinach', q: '2 cups'}] },
+
+{ name: 'Cheese Pizza', desc: 'Classic cheese pizza.', time: 35, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'pizza dough', q: '1'}, {name: 'cheese', q: '2 cups'}, {name: 'tomato sauce', q: '1 cup'}] },
+
+{ name: 'Pepperoni Pizza', desc: 'Pizza topped with pepperoni.', time: 35, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'pizza dough', q: '1'}, {name: 'pepperoni', q: '20 slices'}, {name: 'cheese', q: '2 cups'}] },
+
+{ name: 'Vegetable Pizza', desc: 'Pizza loaded with vegetables.', time: 35, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'pizza dough', q: '1'}, {name: 'capsicum', q: '1'}, {name: 'onion', q: '1'}, {name: 'cheese', q: '2 cups'}] },
+
+{ name: 'Chicken Pizza', desc: 'Chicken topped pizza.', time: 40, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'pizza dough', q: '1'}, {name: 'chicken', q: '1 cup'}, {name: 'cheese', q: '2 cups'}, {name: 'sauce', q: '1 cup'}] },
+
+{ name: 'French Fries', desc: 'Crispy homemade fries.', time: 25, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '4'}, {name: 'oil', q: '2 cups'}, {name: 'salt', q: '1 tsp'}] },
+
+{ name: 'Loaded Nachos', desc: 'Cheesy loaded nachos.', time: 15, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'nachos', q: '2 cups'}, {name: 'cheese', q: '1 cup'}, {name: 'jalapeno', q: '1/4 cup'}, {name: 'salsa', q: '1/2 cup'}] },
+
+{ name: 'Chicken Quesadilla', desc: 'Cheesy chicken quesadilla.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'tortilla', q: '2'}, {name: 'chicken', q: '1 cup'}, {name: 'cheese', q: '1 cup'}] },
+
+{ name: 'Beef Tacos', desc: 'Mexican-style beef tacos.', time: 25, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'taco shells', q: '4'}, {name: 'beef', q: '1 cup'}, {name: 'lettuce', q: '1/2 cup'}, {name: 'cheese', q: '1/2 cup'}] },
+{ name: 'Chicken Tacos', desc: 'Flavorful chicken tacos.', time: 20, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'taco shells', q: '4'}, {name: 'chicken', q: '1 cup'}, {name: 'lettuce', q: '1/2 cup'}, {name: 'cheese', q: '1/2 cup'}] },
+
+{ name: 'Fish Tacos', desc: 'Crispy fish tacos with vegetables.', time: 25, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'fish', q: '1 lb'}, {name: 'taco shells', q: '4'}, {name: 'cabbage', q: '1 cup'}, {name: 'lime', q: '1'}] },
+
+{ name: 'Chicken Shawarma', desc: 'Middle Eastern chicken shawarma.', time: 35, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'pita bread', q: '4'}, {name: 'garlic sauce', q: '1/2 cup'}, {name: 'lettuce', q: '1 cup'}] },
+
+{ name: 'Beef Shawarma', desc: 'Tender beef shawarma wrap.', time: 40, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'pita bread', q: '4'}, {name: 'garlic sauce', q: '1/2 cup'}, {name: 'tomato', q: '2'}] },
+
+{ name: 'Hummus Bowl', desc: 'Creamy hummus served with vegetables.', time: 15, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'chickpeas', q: '2 cups'}, {name: 'tahini', q: '2 tbsp'}, {name: 'olive oil', q: '1 tbsp'}, {name: 'lemon', q: '1'}] },
+
+{ name: 'Falafel Wrap', desc: 'Falafel wrapped in pita bread.', time: 30, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'falafel', q: '6 pieces'}, {name: 'pita bread', q: '2'}, {name: 'lettuce', q: '1 cup'}, {name: 'tahini sauce', q: '3 tbsp'}] },
+
+{ name: 'Grilled Cheese Sandwich', desc: 'Golden grilled cheese sandwich.', time: 10, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'cheese', q: '2 slices'}, {name: 'butter', q: '1 tbsp'}] },
+
+{ name: 'Club Sandwich', desc: 'Triple-layer club sandwich.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '3 slices'}, {name: 'chicken', q: '1/2 cup'}, {name: 'lettuce', q: '2 leaves'}, {name: 'mayo', q: '2 tbsp'}] },
+
+{ name: 'Chicken Nuggets', desc: 'Crispy homemade chicken nuggets.', time: 25, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'breadcrumbs', q: '1 cup'}, {name: 'egg', q: '1'}, {name: 'oil', q: '2 cups'}] },
+
+{ name: 'Mozzarella Sticks', desc: 'Cheesy fried mozzarella sticks.', time: 20, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'mozzarella', q: '8 sticks'}, {name: 'breadcrumbs', q: '1 cup'}, {name: 'egg', q: '1'}] },
+
+{ name: 'Onion Rings', desc: 'Crispy battered onion rings.', time: 20, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'onion', q: '2'}, {name: 'flour', q: '1 cup'}, {name: 'oil', q: '2 cups'}] },
+
+{ name: 'Mashed Potatoes', desc: 'Creamy mashed potatoes.', time: 25, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '4'}, {name: 'milk', q: '1/2 cup'}, {name: 'butter', q: '2 tbsp'}] },
+
+{ name: 'Baked Potato', desc: 'Oven baked potato.', time: 50, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'butter', q: '1 tbsp'}, {name: 'cheese', q: '1/4 cup'}] },
+
+{ name: 'Stuffed Bell Peppers', desc: 'Bell peppers stuffed with rice.', time: 45, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'bell pepper', q: '4'}, {name: 'rice', q: '2 cups'}, {name: 'cheese', q: '1 cup'}] },
+
+{ name: 'Vegetable Soup', desc: 'Healthy mixed vegetable soup.', time: 30, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'carrot', q: '2'}, {name: 'potato', q: '2'}, {name: 'peas', q: '1 cup'}, {name: 'onion', q: '1'}] },
+
+{ name: 'Minestrone Soup', desc: 'Italian vegetable soup.', time: 40, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'pasta', q: '1 cup'}, {name: 'beans', q: '1 cup'}, {name: 'tomato', q: '2'}, {name: 'carrot', q: '1'}] },
+
+{ name: 'Corn Chowder', desc: 'Creamy corn chowder.', time: 35, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'corn', q: '2 cups'}, {name: 'milk', q: '1 cup'}, {name: 'potato', q: '2'}] },
+
+{ name: 'Pumpkin Soup', desc: 'Smooth pumpkin soup.', time: 35, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'pumpkin', q: '2 cups'}, {name: 'onion', q: '1'}, {name: 'cream', q: '1/2 cup'}] },
+
+{ name: 'Chicken Pot Pie', desc: 'Comforting chicken pot pie.', time: 60, cat: catDinner.id, diff: diffHard.id, ingredients: [{name: 'chicken', q: '1 cup'}, {name: 'pie crust', q: '1'}, {name: 'peas', q: '1/2 cup'}, {name: 'carrot', q: '1'}] },
+
+{ name: 'Shepherds Pie', desc: 'Classic meat and potato pie.', time: 55, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'potato', q: '4'}, {name: 'peas', q: '1 cup'}] },
+
+{ name: 'Beef Stew Deluxe', desc: 'Rich beef stew with vegetables.', time: 120, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'potato', q: '3'}, {name: 'carrot', q: '2'}, {name: 'onion', q: '1'}] },
+
+{ name: 'Chicken Stir Fry', desc: 'Quick chicken stir fry.', time: 20, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'broccoli', q: '1 cup'}, {name: 'carrot', q: '1'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Beef Stir Fry', desc: 'Tender beef stir fry.', time: 25, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'broccoli', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Shrimp Stir Fry', desc: 'Shrimp and vegetable stir fry.', time: 20, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'shrimp', q: '1 lb'}, {name: 'bell pepper', q: '1'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Chicken Teriyaki', desc: 'Sweet and savory teriyaki chicken.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'teriyaki sauce', q: '1/2 cup'}, {name: 'rice', q: '2 cups'}] },
+
+{ name: 'Orange Chicken', desc: 'Crispy chicken in orange sauce.', time: 35, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'orange juice', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}, {name: 'cornstarch', q: '2 tbsp'}] },
+
+{ name: 'Sweet and Sour Chicken', desc: 'Tangy sweet and sour chicken.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'pineapple', q: '1 cup'}, {name: 'bell pepper', q: '1'}, {name: 'sweet sour sauce', q: '1/2 cup'}] },
+
+{ name: 'Chicken Noodles', desc: 'Simple chicken noodles.', time: 25, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'noodles', q: '2 cups'}, {name: 'chicken', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}, {name: 'carrot', q: '1'}] },
+
+{ name: 'Vegetable Noodles', desc: 'Mixed vegetable noodles.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'noodles', q: '2 cups'}, {name: 'carrot', q: '1'}, {name: 'cabbage', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Beef Noodles', desc: 'Savory beef noodles.', time: 30, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'noodles', q: '2 cups'}, {name: 'beef', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}, {name: 'onion', q: '1'}] },
+
+{ name: 'Chicken Fajitas', desc: 'Sizzling chicken fajitas.', time: 25, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '1 lb'}, {name: 'bell pepper', q: '2'}, {name: 'onion', q: '1'}, {name: 'tortilla', q: '4'}] },
+
+{ name: 'Beef Fajitas', desc: 'Beef fajitas with peppers.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'beef', q: '1 lb'}, {name: 'bell pepper', q: '2'}, {name: 'onion', q: '1'}, {name: 'tortilla', q: '4'}] },
+
+{ name: 'Chicken Enchiladas', desc: 'Baked chicken enchiladas.', time: 40, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'tortilla', q: '6'}, {name: 'chicken', q: '2 cups'}, {name: 'cheese', q: '1 cup'}, {name: 'enchilada sauce', q: '1 cup'}] },
+
+{ name: 'Beef Enchiladas', desc: 'Classic beef enchiladas.', time: 45, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'tortilla', q: '6'}, {name: 'beef', q: '2 cups'}, {name: 'cheese', q: '1 cup'}, {name: 'enchilada sauce', q: '1 cup'}] },
+
+{ name: 'Chicken Burrito', desc: 'Large chicken burrito.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'tortilla', q: '1'}, {name: 'chicken', q: '1 cup'}, {name: 'rice', q: '1/2 cup'}, {name: 'beans', q: '1/2 cup'}] },
+
+{ name: 'Beef Burrito', desc: 'Loaded beef burrito.', time: 25, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'tortilla', q: '1'}, {name: 'beef', q: '1 cup'}, {name: 'rice', q: '1/2 cup'}, {name: 'beans', q: '1/2 cup'}] },
+
+{ name: 'Vegetable Burrito', desc: 'Healthy vegetable burrito.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'tortilla', q: '1'}, {name: 'rice', q: '1/2 cup'}, {name: 'beans', q: '1/2 cup'}, {name: 'corn', q: '1/2 cup'}] },
+
+{ name: 'Chicken Parmesan', desc: 'Breaded chicken with cheese.', time: 40, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'chicken', q: '2 breasts'}, {name: 'parmesan', q: '1 cup'}, {name: 'breadcrumbs', q: '1 cup'}, {name: 'tomato sauce', q: '1 cup'}] },
+
+{ name: 'Eggplant Parmesan', desc: 'Vegetarian parmesan dish.', time: 45, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'eggplant', q: '2'}, {name: 'parmesan', q: '1 cup'}, {name: 'tomato sauce', q: '1 cup'}, {name: 'breadcrumbs', q: '1 cup'}] },
+
+{ name: 'Chicken Caesar Wrap', desc: 'Caesar salad wrapped in tortilla.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'chicken', q: '1 cup'}, {name: 'tortilla', q: '1'}, {name: 'lettuce', q: '1 cup'}, {name: 'caesar dressing', q: '2 tbsp'}] },
+
+{ name: 'Turkey Sandwich', desc: 'Classic turkey sandwich.', time: 10, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'turkey', q: '4 slices'}, {name: 'lettuce', q: '2 leaves'}, {name: 'mayo', q: '1 tbsp'}] },
+
+{ name: 'Ham Sandwich', desc: 'Simple ham sandwich.', time: 10, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'ham', q: '4 slices'}, {name: 'cheese', q: '1 slice'}, {name: 'mustard', q: '1 tbsp'}] },
+
+{ name: 'Chicken Panini', desc: 'Pressed chicken panini.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'chicken', q: '1/2 cup'}, {name: 'cheese', q: '2 slices'}, {name: 'tomato', q: '1'}] },
+
+{ name: 'Vegetable Panini', desc: 'Grilled vegetable panini.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'zucchini', q: '1'}, {name: 'bell pepper', q: '1'}, {name: 'cheese', q: '2 slices'}] },
+
+{ name: 'Chicken Pita Pocket', desc: 'Chicken stuffed pita pocket.', time: 15, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'pita bread', q: '1'}, {name: 'chicken', q: '1 cup'}, {name: 'lettuce', q: '1/2 cup'}, {name: 'tomato', q: '1'}] },
+
+{ name: 'Beef Pita Pocket', desc: 'Beef-filled pita bread.', time: 20, cat: catLunch.id, diff: diffMedium.id, ingredients: [{name: 'pita bread', q: '1'}, {name: 'beef', q: '1 cup'}, {name: 'onion', q: '1/4 cup'}, {name: 'tomato', q: '1'}] },
+
+{ name: 'Chicken Rice Bowl', desc: 'Chicken served over rice.', time: 25, cat: catDinner.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'chicken', q: '1 cup'}, {name: 'broccoli', q: '1 cup'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Beef Rice Bowl', desc: 'Beef and rice bowl.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'beef', q: '1 cup'}, {name: 'onion', q: '1'}, {name: 'soy sauce', q: '2 tbsp'}] },
+
+{ name: 'Teriyaki Rice Bowl', desc: 'Teriyaki chicken over rice.', time: 30, cat: catDinner.id, diff: diffMedium.id, ingredients: [{name: 'rice', q: '2 cups'}, {name: 'chicken', q: '1 cup'}, {name: 'teriyaki sauce', q: '1/2 cup'}, {name: 'broccoli', q: '1 cup'}] },
+
+{ name: 'Mediterranean Bowl', desc: 'Fresh Mediterranean grain bowl.', time: 20, cat: catLunch.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '1 cup'}, {name: 'chickpeas', q: '1 cup'}, {name: 'cucumber', q: '1'}, {name: 'feta cheese', q: '1/2 cup'}] },
+{ name: 'Chocolate Chip Cookies', desc: 'Classic homemade chocolate chip cookies.', time: 25, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'chocolate chips', q: '1 cup'}, {name: 'butter', q: '1/2 cup'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Oatmeal Cookies', desc: 'Chewy oatmeal cookies.', time: 25, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'oats', q: '2 cups'}, {name: 'flour', q: '1 cup'}, {name: 'butter', q: '1/2 cup'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Blueberry Muffins', desc: 'Soft blueberry muffins.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'blueberries', q: '1 cup'}, {name: 'milk', q: '1 cup'}, {name: 'egg', q: '2'}] },
+
+{ name: 'Chocolate Muffins', desc: 'Rich chocolate muffins.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'cocoa powder', q: '1/2 cup'}, {name: 'milk', q: '1 cup'}, {name: 'egg', q: '2'}] },
+
+{ name: 'Cheesecake', desc: 'Creamy baked cheesecake.', time: 60, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'cream cheese', q: '2 cups'}, {name: 'sugar', q: '1 cup'}, {name: 'egg', q: '3'}, {name: 'graham crackers', q: '1 cup'}] },
+
+{ name: 'Strawberry Cheesecake', desc: 'Cheesecake topped with strawberries.', time: 65, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'cream cheese', q: '2 cups'}, {name: 'strawberries', q: '1 cup'}, {name: 'sugar', q: '1 cup'}, {name: 'egg', q: '3'}] },
+
+{ name: 'Vanilla Ice Cream', desc: 'Homemade vanilla ice cream.', time: 30, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'milk', q: '2 cups'}, {name: 'cream', q: '1 cup'}, {name: 'sugar', q: '3/4 cup'}, {name: 'vanilla', q: '1 tsp'}] },
+
+{ name: 'Chocolate Ice Cream', desc: 'Creamy chocolate ice cream.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'milk', q: '2 cups'}, {name: 'cream', q: '1 cup'}, {name: 'cocoa powder', q: '1/2 cup'}, {name: 'sugar', q: '3/4 cup'}] },
+
+{ name: 'Banana Split', desc: 'Classic banana split dessert.', time: 10, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'banana', q: '1'}, {name: 'ice cream', q: '3 scoops'}, {name: 'chocolate syrup', q: '2 tbsp'}, {name: 'nuts', q: '2 tbsp'}] },
+
+{ name: 'Fruit Parfait', desc: 'Layered fruit and yogurt parfait.', time: 10, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'yogurt', q: '1 cup'}, {name: 'berries', q: '1 cup'}, {name: 'granola', q: '1/2 cup'}] },
+
+{ name: 'Rice Pudding', desc: 'Creamy rice pudding dessert.', time: 40, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '1 cup'}, {name: 'milk', q: '2 cups'}, {name: 'sugar', q: '1/2 cup'}, {name: 'cinnamon', q: '1 tsp'}] },
+
+{ name: 'Bread Pudding', desc: 'Warm bread pudding.', time: 45, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'bread', q: '4 cups'}, {name: 'milk', q: '2 cups'}, {name: 'egg', q: '3'}, {name: 'sugar', q: '1/2 cup'}] },
+
+{ name: 'Carrot Cake', desc: 'Moist homemade carrot cake.', time: 55, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'carrot', q: '2 cups'}, {name: 'flour', q: '2 cups'}, {name: 'egg', q: '3'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Red Velvet Cake', desc: 'Classic red velvet cake.', time: 60, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'cocoa powder', q: '2 tbsp'}, {name: 'cream cheese', q: '1 cup'}, {name: 'egg', q: '3'}] },
+
+{ name: 'Chocolate Brownie Sundae', desc: 'Brownie topped with ice cream.', time: 20, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'brownie', q: '1 piece'}, {name: 'ice cream', q: '2 scoops'}, {name: 'chocolate syrup', q: '2 tbsp'}] },
+
+{ name: 'Mango Smoothie', desc: 'Refreshing mango smoothie.', time: 5, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'mango', q: '2'}, {name: 'milk', q: '1 cup'}, {name: 'yogurt', q: '1/2 cup'}] },
+
+{ name: 'Berry Smoothie', desc: 'Mixed berry smoothie.', time: 5, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'berries', q: '1 cup'}, {name: 'milk', q: '1 cup'}, {name: 'honey', q: '1 tbsp'}] },
+
+{ name: 'Green Smoothie', desc: 'Healthy green smoothie.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'spinach', q: '1 cup'}, {name: 'banana', q: '1'}, {name: 'milk', q: '1 cup'}] },
+
+{ name: 'Protein Shake', desc: 'High-protein workout shake.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'protein powder', q: '1 scoop'}, {name: 'milk', q: '1 cup'}, {name: 'banana', q: '1'}] },
+
+{ name: 'Granola Bowl', desc: 'Crunchy granola breakfast bowl.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'granola', q: '1 cup'}, {name: 'yogurt', q: '1 cup'}, {name: 'berries', q: '1/2 cup'}] },
+
+{ name: 'Chia Pudding', desc: 'Healthy chia seed pudding.', time: 10, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'chia seeds', q: '1/4 cup'}, {name: 'milk', q: '1 cup'}, {name: 'honey', q: '1 tbsp'}] },
+
+{ name: 'Breakfast Burrito', desc: 'Egg-filled breakfast burrito.', time: 15, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'tortilla', q: '1'}, {name: 'egg', q: '2'}, {name: 'cheese', q: '1/4 cup'}, {name: 'sausage', q: '1/4 cup'}] },
+
+{ name: 'Egg Muffins', desc: 'Baked egg breakfast muffins.', time: 20, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'egg', q: '4'}, {name: 'cheese', q: '1/2 cup'}, {name: 'bell pepper', q: '1/2 cup'}] },
+
+{ name: 'Hash Browns', desc: 'Crispy potato hash browns.', time: 20, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'butter', q: '1 tbsp'}, {name: 'salt', q: '1 tsp'}] },
+
+{ name: 'Breakfast Sandwich', desc: 'Egg and cheese breakfast sandwich.', time: 15, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'egg', q: '1'}, {name: 'cheese', q: '1 slice'}, {name: 'butter', q: '1 tbsp'}] },
+{ name: 'Chocolate Chip Cookies', desc: 'Classic homemade chocolate chip cookies.', time: 25, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'chocolate chips', q: '1 cup'}, {name: 'butter', q: '1/2 cup'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Oatmeal Cookies', desc: 'Chewy oatmeal cookies.', time: 25, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'oats', q: '2 cups'}, {name: 'flour', q: '1 cup'}, {name: 'butter', q: '1/2 cup'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Blueberry Muffins', desc: 'Soft blueberry muffins.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'blueberries', q: '1 cup'}, {name: 'milk', q: '1 cup'}, {name: 'egg', q: '2'}] },
+
+{ name: 'Chocolate Muffins', desc: 'Rich chocolate muffins.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'cocoa powder', q: '1/2 cup'}, {name: 'milk', q: '1 cup'}, {name: 'egg', q: '2'}] },
+
+{ name: 'Cheesecake', desc: 'Creamy baked cheesecake.', time: 60, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'cream cheese', q: '2 cups'}, {name: 'sugar', q: '1 cup'}, {name: 'egg', q: '3'}, {name: 'graham crackers', q: '1 cup'}] },
+
+{ name: 'Strawberry Cheesecake', desc: 'Cheesecake topped with strawberries.', time: 65, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'cream cheese', q: '2 cups'}, {name: 'strawberries', q: '1 cup'}, {name: 'sugar', q: '1 cup'}, {name: 'egg', q: '3'}] },
+
+{ name: 'Vanilla Ice Cream', desc: 'Homemade vanilla ice cream.', time: 30, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'milk', q: '2 cups'}, {name: 'cream', q: '1 cup'}, {name: 'sugar', q: '3/4 cup'}, {name: 'vanilla', q: '1 tsp'}] },
+
+{ name: 'Chocolate Ice Cream', desc: 'Creamy chocolate ice cream.', time: 35, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'milk', q: '2 cups'}, {name: 'cream', q: '1 cup'}, {name: 'cocoa powder', q: '1/2 cup'}, {name: 'sugar', q: '3/4 cup'}] },
+
+{ name: 'Banana Split', desc: 'Classic banana split dessert.', time: 10, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'banana', q: '1'}, {name: 'ice cream', q: '3 scoops'}, {name: 'chocolate syrup', q: '2 tbsp'}, {name: 'nuts', q: '2 tbsp'}] },
+
+{ name: 'Fruit Parfait', desc: 'Layered fruit and yogurt parfait.', time: 10, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'yogurt', q: '1 cup'}, {name: 'berries', q: '1 cup'}, {name: 'granola', q: '1/2 cup'}] },
+
+{ name: 'Rice Pudding', desc: 'Creamy rice pudding dessert.', time: 40, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'rice', q: '1 cup'}, {name: 'milk', q: '2 cups'}, {name: 'sugar', q: '1/2 cup'}, {name: 'cinnamon', q: '1 tsp'}] },
+
+{ name: 'Bread Pudding', desc: 'Warm bread pudding.', time: 45, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'bread', q: '4 cups'}, {name: 'milk', q: '2 cups'}, {name: 'egg', q: '3'}, {name: 'sugar', q: '1/2 cup'}] },
+
+{ name: 'Carrot Cake', desc: 'Moist homemade carrot cake.', time: 55, cat: catDessert.id, diff: diffMedium.id, ingredients: [{name: 'carrot', q: '2 cups'}, {name: 'flour', q: '2 cups'}, {name: 'egg', q: '3'}, {name: 'sugar', q: '1 cup'}] },
+
+{ name: 'Red Velvet Cake', desc: 'Classic red velvet cake.', time: 60, cat: catDessert.id, diff: diffHard.id, ingredients: [{name: 'flour', q: '2 cups'}, {name: 'cocoa powder', q: '2 tbsp'}, {name: 'cream cheese', q: '1 cup'}, {name: 'egg', q: '3'}] },
+
+{ name: 'Chocolate Brownie Sundae', desc: 'Brownie topped with ice cream.', time: 20, cat: catDessert.id, diff: diffEasy.id, ingredients: [{name: 'brownie', q: '1 piece'}, {name: 'ice cream', q: '2 scoops'}, {name: 'chocolate syrup', q: '2 tbsp'}] },
+
+{ name: 'Mango Smoothie', desc: 'Refreshing mango smoothie.', time: 5, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'mango', q: '2'}, {name: 'milk', q: '1 cup'}, {name: 'yogurt', q: '1/2 cup'}] },
+
+{ name: 'Berry Smoothie', desc: 'Mixed berry smoothie.', time: 5, cat: catSnack.id, diff: diffEasy.id, ingredients: [{name: 'berries', q: '1 cup'}, {name: 'milk', q: '1 cup'}, {name: 'honey', q: '1 tbsp'}] },
+
+{ name: 'Green Smoothie', desc: 'Healthy green smoothie.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'spinach', q: '1 cup'}, {name: 'banana', q: '1'}, {name: 'milk', q: '1 cup'}] },
+
+{ name: 'Protein Shake', desc: 'High-protein workout shake.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'protein powder', q: '1 scoop'}, {name: 'milk', q: '1 cup'}, {name: 'banana', q: '1'}] },
+
+{ name: 'Granola Bowl', desc: 'Crunchy granola breakfast bowl.', time: 5, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'granola', q: '1 cup'}, {name: 'yogurt', q: '1 cup'}, {name: 'berries', q: '1/2 cup'}] },
+
+{ name: 'Chia Pudding', desc: 'Healthy chia seed pudding.', time: 10, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'chia seeds', q: '1/4 cup'}, {name: 'milk', q: '1 cup'}, {name: 'honey', q: '1 tbsp'}] },
+
+{ name: 'Breakfast Burrito', desc: 'Egg-filled breakfast burrito.', time: 15, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'tortilla', q: '1'}, {name: 'egg', q: '2'}, {name: 'cheese', q: '1/4 cup'}, {name: 'sausage', q: '1/4 cup'}] },
+
+{ name: 'Egg Muffins', desc: 'Baked egg breakfast muffins.', time: 20, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'egg', q: '4'}, {name: 'cheese', q: '1/2 cup'}, {name: 'bell pepper', q: '1/2 cup'}] },
+
+{ name: 'Hash Browns', desc: 'Crispy potato hash browns.', time: 20, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'potato', q: '2'}, {name: 'butter', q: '1 tbsp'}, {name: 'salt', q: '1 tsp'}] },
+
+{ name: 'Breakfast Sandwich', desc: 'Egg and cheese breakfast sandwich.', time: 15, cat: catBreakfast.id, diff: diffEasy.id, ingredients: [{name: 'bread', q: '2 slices'}, {name: 'egg', q: '1'}, {name: 'cheese', q: '1 slice'}, {name: 'butter', q: '1 tbsp'}] },
   ];
 
   for (let i = 0; i < recipesData.length; i++) {
