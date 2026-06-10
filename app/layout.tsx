@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import BackgroundDecorations from "@/components/BackgroundDecorations";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Recipe Parrot - Daily Recipe Finder",
-  description: "AI-powered recipe finder that matches your ingredients with delicious recipes",
+  title: "Recipe Parrot - AI-Powered Recipe Finder",
+  description: "Find delicious recipes based on the ingredients you have at home with our AI-powered recipe finder",
 };
 
 export default function RootLayout({
@@ -28,11 +27,8 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative">
-        <BackgroundDecorations />
-        <div className="main-content relative z-10">
-          {children}
-        </div>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {children}
       </body>
     </html>
   );

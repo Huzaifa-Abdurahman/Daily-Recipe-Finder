@@ -27,136 +27,92 @@ export default function RecipeCard({ recipe }: { recipe: any }) {
     }
   };
 
-  const matchPercentage = Math.round(recipe.matchPercentage);
-  const matchLevel = matchPercentage >= 95 ? '🌟 Perfect' : matchPercentage >= 80 ? '✨ Excellent' : 'Good';
-
   return (
-    <div className="recipe-card bg-white dark:bg-[#3d2311] border-2 border-cream dark:border-wood-light rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
-      {/* Recipe Image Container */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-cream to-cream-dark dark:from-[#2b1a0e] dark:to-[#3d2311] h-56">
-        <img
-          src={imgSrc || placeholderSrc}
-          alt={recipe.name}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-          onError={() => setImgSrc(placeholderSrc)}
-        />
-        
-        {/* Match Percentage Badge */}
-        <div className="absolute top-4 right-4">
-          <div className="match-badge px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg backdrop-blur-sm">
-            <div className="flex items-center gap-1">
-              <span>{matchLevel}</span>
-              <span className="text-base">{matchPercentage}%</span>
-            </div>
-          </div>
+    <div className="bg-white dark:bg-[#3d2311] border border-cream dark:border-wood-light rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 card-hover">
+      {/* Image container with overlay gradient */}
+      <div className="relative overflow-hidden h-48">
+        {(imgSrc || placeholderSrc) && (
+          <img
+            src={imgSrc || placeholderSrc}
+            alt={recipe.name}
+            className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            onError={() => setImgSrc(placeholderSrc)}
+          />
+        )}
+        {/* Match percentage badge */}
+        <div className="absolute top-3 right-3 inline-flex items-center px-3 py-1 rounded-full text-sm font-bold bg-parrot text-white shadow-lg">
+          ✓ {Math.round(recipe.matchPercentage)}%
         </div>
-
-        {/* Category Badge */}
+        {/* Category badge */}
         {recipe.category?.name && (
-          <div className="absolute top-4 left-4">
-            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-beak/90 text-white shadow-lg">
-              📂 {recipe.category.name}
-            </span>
+          <div className="absolute top-3 left-3 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-beak/90 text-white backdrop-blur-sm">
+            {recipe.category.name}
           </div>
         )}
       </div>
 
-      {/* Content Section */}
-      <div className="p-6 space-y-5">
-        {/* Recipe Title */}
-        <div>
-          <h3 className="text-2xl font-bold text-wood dark:text-cream mb-2 group-hover:text-parrot transition-colors">
-            {recipe.name}
-          </h3>
+      <div className="p-5 space-y-4">
+        {/* Title */}
+        <div className="flex justify-between items-start gap-3">
+          <h3 className="text-xl font-bold text-wood dark:text-cream leading-tight">{recipe.name}</h3>
         </div>
-
-        {/* Quick Info */}
-        <div className="flex items-center gap-6 text-sm font-semibold text-wood-light dark:text-cream-dark border-b border-cream/40 dark:border-wood-light/40 pb-4">
-          <span className="flex items-center gap-2 bg-parrot/10 px-3 py-1.5 rounded-full text-parrot">
-            ⏱️ {recipe.cooking_time} mins
-          </span>
-          <span className="flex items-center gap-2 bg-beak/10 px-3 py-1.5 rounded-full text-beak">
-            👨‍🍳 {recipe.serving_size || '4'} servings
+        
+        {/* Meta information */}
+        <div className="text-sm text-wood-light dark:text-cream-dark flex items-center gap-4 flex-wrap">
+          <span className="flex items-center gap-1">
+            <span>⏱️</span>
+            {recipe.cooking_time} mins
           </span>
         </div>
 
         {/* Description */}
-        <p className="text-wood-light dark:text-cream-dark/90 text-sm leading-relaxed line-clamp-2 hover:line-clamp-none transition-all">
-          {recipe.description || 'A delicious recipe waiting to be discovered!'}
-        </p>
+        <p className="text-wood-light/90 dark:text-cream-dark/90 text-sm line-clamp-2">{recipe.description}</p>
 
-        {/* Ingredients Count (if available) */}
-        {recipe.ingredients && recipe.ingredients.length > 0 && (
-          <div className="bg-cream/30 dark:bg-wood-light/20 rounded-lg p-3">
-            <p className="text-xs font-semibold text-wood dark:text-cream mb-2">
-              📋 Ingredients ({recipe.ingredients.length})
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {recipe.ingredients.slice(0, 4).map((ing: any, idx: number) => (
-                <span key={idx} className="text-xs bg-white dark:bg-[#3d2311] px-2 py-1 rounded text-wood dark:text-cream border border-cream-dark dark:border-wood-light/40">
-                  {ing.name || ing}
-                </span>
-              ))}
-              {recipe.ingredients.length > 4 && (
-                <span className="text-xs bg-white dark:bg-[#3d2311] px-2 py-1 rounded text-wood-light dark:text-cream-dark italic">
-                  +{recipe.ingredients.length - 4} more...
-                </span>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Action Buttons */}
-        <div className="pt-2 flex gap-3 flex-col sm:flex-row">
+        {/* Buttons section */}
+        <div className="pt-4 flex gap-2 border-t border-cream dark:border-wood-light">
           <button 
             onClick={() => setShowSteps(!showSteps)}
-            className="flex-1 bg-gradient-to-r from-cream to-cream-dark dark:from-wood-light dark:to-wood hover:from-cream-dark hover:to-beak/20 dark:hover:from-wood dark:hover:to-wood-light text-wood dark:text-cream font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 active:scale-95 text-sm shadow-md flex items-center justify-center gap-2"
+            className="flex-1 bg-cream hover:bg-cream-dark dark:bg-wood-light dark:hover:bg-wood text-wood dark:text-cream font-medium py-2 px-3 rounded transition text-sm flex items-center justify-center gap-1 group"
           >
-            <span>{showSteps ? '▼' : '▶'}</span>
-            {showSteps ? 'Hide Steps' : 'View Steps'}
+            <span className="group-hover:rotate-180 transition-transform duration-300">{showSteps ? '👁️‍🗨️' : '📖'}</span>
+            {showSteps ? 'Hide' : 'Steps'}
           </button>
           <button 
             onClick={handleEnhance}
             disabled={enhancing}
-            className="flex-1 bg-gradient-to-r from-beak/20 to-beak/30 hover:from-beak/40 hover:to-beak/50 dark:from-beak/30 dark:to-beak/40 dark:hover:from-beak/50 dark:hover:to-beak/60 text-wood dark:text-cream font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed text-sm shadow-md flex items-center justify-center gap-2"
+            className="flex-1 bg-beak/20 hover:bg-beak/30 dark:bg-beak/30 dark:hover:bg-beak/40 text-wood dark:text-cream font-medium py-2 px-3 rounded transition text-sm disabled:opacity-50 flex items-center justify-center gap-1 group"
           >
-            <span>{enhancing ? '⏳' : '✨'}</span>
-            {enhancing ? 'Enhancing...' : 'Enhance Recipe'}
+            <span className="group-hover:animate-bounce">{enhancing ? '⚙️' : '✨'}</span>
+            {enhancing ? 'Enhancing...' : 'Enhance'}
           </button>
         </div>
 
-        {/* Cooking Steps Section */}
+        {/* Steps section */}
         {showSteps && (
-          <div className="mt-6 p-5 bg-gradient-to-br from-cream/40 to-cream/20 dark:from-wood-light/25 dark:to-wood-light/10 rounded-xl space-y-4 border border-cream-dark/30 dark:border-wood-light/30 animate-in fade-in slide-in-from-top-2">
-            <h4 className="font-bold text-wood dark:text-cream text-lg flex items-center gap-2">
-              👨‍🍳 Cooking Steps
+          <div className="mt-4 p-4 bg-cream/40 dark:bg-wood-light/20 rounded-lg space-y-2 border-l-4 border-parrot">
+            <h4 className="font-semibold text-wood dark:text-cream flex items-center gap-2">
+              <span>🍳</span>
+              Cooking Steps
             </h4>
-            <ol className="space-y-3">
-              {recipe.steps && recipe.steps.length > 0 ? (
-                recipe.steps.map((step: any, idx: number) => (
-                  <li key={step.id} className="flex gap-4 text-sm text-wood-light dark:text-cream-dark">
-                    <span className="font-bold text-parrot flex-shrink-0 bg-parrot/20 w-7 h-7 rounded-full flex items-center justify-center">
-                      {idx + 1}
-                    </span>
-                    <span className="pt-0.5">{step.instruction}</span>
-                  </li>
-                ))
-              ) : (
-                <p className="text-wood-light dark:text-cream-dark/60 italic">No detailed steps available for this recipe.</p>
+            <ol className="list-decimal list-inside space-y-2 text-sm text-wood-light dark:text-cream-dark">
+              {recipe.steps?.map((step: any) => (
+                <li key={step.id} className="ml-2">{step.instruction}</li>
+              ))}
+              {(!recipe.steps || recipe.steps.length === 0) && (
+                <p>No steps available.</p>
               )}
             </ol>
           </div>
         )}
 
-        {/* AI Enhancement Section */}
+        {/* AI Enhancements */}
         {enhancedText && (
-          <div className="mt-6 p-5 bg-gradient-to-br from-beak/15 to-beak/5 rounded-xl text-sm text-wood dark:text-cream border-2 border-beak/30 space-y-3 animate-in fade-in slide-in-from-bottom-2">
-            <h4 className="font-bold flex items-center gap-2 text-wood dark:text-cream">
-              🤖 AI Suggestions
+          <div className="mt-4 p-4 bg-beak/10 rounded-lg text-sm text-wood dark:text-cream border border-beak/30 space-y-2">
+            <h4 className="font-semibold flex items-center gap-2">
+              <span>🤖</span>
+              Chef's AI Suggestions
             </h4>
-            <div className="whitespace-pre-wrap text-wood-light dark:text-cream-dark/90 leading-relaxed">
-              {enhancedText}
-            </div>
+            <div className="whitespace-pre-wrap text-xs opacity-90">{enhancedText}</div>
           </div>
         )}
       </div>
