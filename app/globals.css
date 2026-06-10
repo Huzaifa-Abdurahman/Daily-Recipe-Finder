@@ -31,4 +31,170 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background decoration elements */
+.background-decorations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.decoration-item {
+  position: absolute;
+  opacity: 0.08;
+  filter: drop-shadow(0 2px 4px rgba(80, 48, 26, 0.1));
+}
+
+.decoration-item.dark {
+  opacity: 0.12;
+  filter: drop-shadow(0 2px 4px rgba(255, 251, 247, 0.1));
+}
+
+@media (prefers-color-scheme: dark) {
+  .decoration-item {
+    opacity: 0.12;
+    filter: drop-shadow(0 2px 4px rgba(253, 251, 247, 0.1));
+  }
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-animation-slow {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.float-animation-slower {
+  animation: float 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Content wrapper to ensure proper z-index stacking */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhanced recipe card styles */
+.recipe-card {
+  position: relative;
+  transition: all 0.3s ease;
+  border-image: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%) 1;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(80, 48, 26, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .recipe-card:hover {
+    box-shadow: 0 8px 24px rgba(253, 251, 247, 0.1);
+  }
+}
+
+/* Search bar enhancement */
+.search-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 230, 211, 0.9) 100%);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-section {
+    background: linear-gradient(135deg, rgba(61, 35, 17, 0.95) 0%, rgba(80, 48, 26, 0.9) 100%);
+  }
+}
+
+/* Gradient text for headers */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-wood) 0%, var(--color-wood-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (prefers-color-scheme: dark) {
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Match percentage badge enhancement */
+.match-badge {
+  background: linear-gradient(135deg, var(--color-parrot) 0%, var(--color-parrot-hover) 100%);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading state animation */
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.loading-pulse {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Enhanced button styles */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+/* Food icon styling */
+.food-icon {
+  display: inline-block;
+  font-size: 1.5em;
 }
